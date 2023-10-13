@@ -16,6 +16,7 @@
 <body>
     <div class="container">
         <h1>Listado de comunas</h1>
+
         <table class="table">
             <thead>
                 <tr>
