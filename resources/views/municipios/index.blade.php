@@ -19,7 +19,6 @@
     <main>
         <div class="container">
             <h1>Listas de municipio</h1>
-            <a href="{{ route('municipios.create') }} " class="btn btn-success">añadir</a>
             <table class="table">
                 <thead>
                     <tr>
@@ -35,7 +34,6 @@
                             <th scope="row">{{ $municipio->muni_codi }}</th>
                             <td>{{ $municipio->muni_nomb }}</td>
                             <td>{{ $municipio->depa_nomb }}</td>
-                            <td>@mdo</td>
                         </tr>
                     @endforeach
                 </tbody>
