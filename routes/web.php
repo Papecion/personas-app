@@ -18,3 +18,5 @@ route::get('/comunas/{comuna}/edit', [ComunaController::class, 'edit'])->name('c
 
 //MUNICIPIOS
 route::get('/municipios', [MunicipioController::class, 'index'])->name('municipios.index');
+route::post('/municipios', [MunicipioController::class, 'store'])->name('municipios.store');
+route::get('/municipios/create', [MunicipioController::class, 'create'])->name('municipios.create');
