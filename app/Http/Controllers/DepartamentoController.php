@@ -44,8 +44,8 @@ class DepartamentoController extends Controller
     public function store(Request $request)
     {
         $departamento = new Departamento();
-        $departamento->muni_nomb = $request->name;
-        $departamento->depa_codi = $request->code;
+        $departamento->depa_nomb = $request->name;
+        $departamento->pais_codi = $request->code;
         $departamento->save();
 
         $departamentos = DB::table('tb_departamento')
